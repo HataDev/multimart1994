@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: var(--primary-color);
+}
+
+.footer__text {
+    color: #ffffffa8;
+}
+
+.footer__quick-links ul li {
+    background: transparent !important;
+}
+
+.footer__quick-links ul li a{
+    color: #ffffffa8;
+}
+
+.quick__links-title {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.footer__contact li span,
+.footer__contact li p {
+    color: #ffffffa8;
+    margin-right: 10px;
+}
+
+.footer__copyright {
+    color: #ffffffa8;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* sjhdsa */
