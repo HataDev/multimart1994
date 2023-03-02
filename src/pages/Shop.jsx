@@ -1,8 +1,13 @@
 import React from 'react'
 
+import CommonSection from '../components/UI/CommonSection'
+import Helmet from '../components/Helmet/Helmet'
+
 function Shop() {
   return (
-    <div>Shop_shop</div>
+    <Helmet title='Shop'>
+      <CommonSection title='Products' />
+    </Helmet>
   )
 }
 
