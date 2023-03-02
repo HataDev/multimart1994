@@ -64,7 +64,7 @@ function Home() {
                   If you are under a lot of pressure, then look for a house that is minimalist, sophisticated and full of trees.
                   With simplicity and sophistication, this interior style will bring something completely different and unexpected new….
                 </p>
-                <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.5 }} className="buy__btn"><Link to='/shop'>SHOP NOW</Link></motion.button>
+                <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.3 }} className="buy__btn"><Link to='/shop'>SHOP NOW</Link></motion.button>
               </div>
             </Col>
 
@@ -110,7 +110,7 @@ function Home() {
                 <h3 className='text-white fs-5 mb-3'>Quality Armchair</h3>
               </div>
               <Clock/>
-              <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.5 }} className='buy__btn store__btn'>
+              <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.3 }} className='buy__btn store__btn'>
                 <Link to='/shop'>Visit Store</Link>
               </motion.button>
             </Col>

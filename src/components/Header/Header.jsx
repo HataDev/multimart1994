@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { Container, Row } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 
@@ -28,6 +28,7 @@ function Header() {
   const totalQuantity = useSelector(state => state.cart.totalQuantity)
 
   const menuRef = useRef(null)
+  const navigate = useNavigate()
 
   const stickyHeaderFunc = () => {
     window.addEventListener('scroll', () => {
@@ -48,6 +49,10 @@ function Header() {
   })
 
   const menuToggle = () => menuRef.current.classList.toggle('active__menu')
+
+  const navigateToCart = () => {
+    navigate('/cart')
+  }
 
   return (
     <header className='header' ref={headerRef}>
@@ -82,7 +87,7 @@ function Header() {
                 <span className="badge">1</span>
               </span>
 
-              <span className="cart__icon">
+              <span className="cart__icon" onClick={ navigateToCart }>
                 <i class="ri-shopping-bag-line"></i>
                 <span className="badge">{totalQuantity}</span>
               </span>
